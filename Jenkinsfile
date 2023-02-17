@@ -1,15 +1,16 @@
+
 pipeline {
 agent any
 stages {
     stage('Build') {
         steps {
-            sh 'g++ -o pes2ug20cs575-1 hello.cpp'
+            sh 'g++ -o pes2ug20cs575-5 hello.cpp'
         }
     }
     
     stage('Test') {
         steps {
-            sh './pes2ug20cs575-1'
+            sh './pes2ug20cs575-5'
         }
     }
     
